@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macOS-10.13'
+  name: 'Nitin-Surana-MacBook-Pro'
 
 steps:
 - task: Maven@3
