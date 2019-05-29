@@ -21,9 +21,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean package'
 
-
 - task: CmdLine@2
   inputs:
-    script: '/Users/nsurana/Downloads/tibcli app push'
-    workingDirectory: '/Users/nsurana/CICS_Setup/SFIntegration.application_1.0.0'
-  
+    script: 'cd /Users/nsurana/CICS_Setup/CI/build/TCI
+      expect deploy.exp /Users/nsurana/CICS_Setup/SFIntegration.application_1.0.0'
