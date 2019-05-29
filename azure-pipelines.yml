@@ -22,7 +22,8 @@ steps:
     goals: 'clean package'
 
 
-- task: Bash@3
+- task: CmdLine@2
   inputs:
-    filePath: '/Users/nsurana/CICS_Setup/CI/build/TCI/deploy.exp'
-    arguments: '/Users/nsurana/azureagent/_work/1/s/GlobeFirstAPI.application/target/GlobeFirstAPI.application_1.0.0.ear'
+    script: '/Users/nsurana/Downloads/tibcli app push'
+    workingDirectory: '/Users/nsurana/CICS_Setup/SFIntegration.application_1.0.0'
+  
