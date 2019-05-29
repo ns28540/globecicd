@@ -23,5 +23,6 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'expect deploy.exp /Users/nsurana/CICS_Setup/SFIntegration.application_1.0.0'
-    workingDirectory: '/Users/nsurana/CICS_Setup/CI/deploy/TCI/SFIntegration/SFIntegration.application_1.0.0'
+    script: 'expect deploy.exp /Users/nsurana/CICS_Setup/CI/deploy/TCI/SFIntegration/SFIntegration.application_1.0.0'
+    workingDirectory: '/Users/nsurana/CICS_Setup/CI/build/TCI'
+    
