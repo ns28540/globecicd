@@ -21,6 +21,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean package'
 
-- task: CmdLine@2
+
+- task: Bash@3
   inputs:
-    script: '/Users/nsurana/CICS_Setup/CI/build/TCI/deploy.exp /Users/nsurana/azureagent/_work/1/s/GlobeFirstAPI.application/target/GlobeFirstAPI.application_1.0.0.ear'
+    filePath: '/Users/nsurana/CICS_Setup/CI/build/TCI/deploy.exp'
+    arguments: '/Users/nsurana/azureagent/_work/1/s/GlobeFirstAPI.application/target/GlobeFirstAPI.application_1.0.0.ear'
