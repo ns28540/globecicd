@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: 'Nitin-Surana-MacBook-Pro'
+  name: 'Default/Nitin-Surana-MacBook-Pro'
 
 steps:
 - task: Maven@3
